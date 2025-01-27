@@ -1,7 +1,7 @@
 public class Card{
-    private rank;
-    private suit;
-    private pointValue;
+    private String rank;
+    private String suit;
+    private int pointValue;
 
     //constructor
     public Card(String rank, String suit, int pointValue){
@@ -24,13 +24,14 @@ public class Card{
     }
 
     public boolean equals(Card c){
-        if(this.rank.equals(c.rank) && this.suit.equals(c.suit) && this.pointValuen== c.pointValue){
+        if(this.rank.equals(c.rank) && this.suit.equals(c.suit) && this.pointValue == c.pointValue){
             return true;
         }
+        return false;
     }
 
     public String toString(){
-        return rank + " of " + suit + " ( point value = " + pointValue + ")"; 
+        return rank + " of " + suit + " (point value = " + pointValue + ")"; 
     }
 
 

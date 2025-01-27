@@ -3,11 +3,11 @@ class Deck{
     private int size;
 
     public Deck(String[] ranks, String[] suits, int[] pointValues){
-        Card[] cardsArray = new Card[ranks.length * suits.lengths];
+        Card[] cardsArray = new Card[ranks.length * suits.length];
         int k = 0;
         for (int i = 0; i < suits.length; i++){
-            for (int j = 0; j < rnks.length; j++){
-                cardsArray[k] = new Card(ranks[j]. suits[i], pointValues[j]);
+            for (int j = 0; j < ranks.length; j++){
+                cardsArray[k] = new Card(ranks[j], suits[i], pointValues[j]);
                 k++;
             }
         }
@@ -15,7 +15,7 @@ class Deck{
         cards = cardsArray;
         size = cards.length;
 
-        shuffle();
+        //shuffle();
         
 
     }
