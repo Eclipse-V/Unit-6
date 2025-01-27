@@ -28,7 +28,9 @@ public class Card{
         if(this.rank.equals(c.rank) && this.suit.equals(c.suit) && this.pointValue == c.pointValue){
             return true;
         }
+        else{
             return false;
+        }
 
     }
 
