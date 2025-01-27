@@ -53,8 +53,8 @@ class Deck{
         for(int i = 0; i < size; i++){
             undealtCards += cards[i] + "\n";
         }
-        for(int j = size; j < cards.length; j++){
-            dealtCards += cards[j] + "\n";
+        for(int i = size; i < cards.length; i++){
+            dealtCards += cards[i] + "\n";
         }
 
         return "size = " + size + "\nUndealth cards: \n" + undealtCards + "\n" + "Dealth cards: \n" + dealtCards;
