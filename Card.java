@@ -26,16 +26,16 @@ public class Card{
         return pointValue;
     }
 
+    //boolean method that determines if two cards are equal
     public boolean equals(Card c){
         if(this.rank.equals(c.rank) && this.suit.equals(c.suit) && this.pointValue == c.pointValue){
             return true;
         }
-        else{
             return false;
-        }
 
     }
 
+    //toString method that formats the rank, suit, and point values of the card object
     public String toString(){
         return rank + " of " + suit + " (point value = " + pointValue + ")"; 
     }
