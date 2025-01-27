@@ -15,7 +15,7 @@ class Deck{
         cards = cardsArray;
         size = cards.length;
 
-        //shuffle();
+        shuffle();
         
 
     }
@@ -32,7 +32,35 @@ class Deck{
     }
 
     public Card deal(){
+        if (cards.length > 0){
+            size--;
+            return cards[size];
+        }
+        return null;
+    }
+
+    public String toString(){
+        String undealtCards = "";
+        String dealtCards = "";
+        for(int i = 0; i < size; i++){
+            undealtCards += cards[i] + "\n";
+        }
+        for(int j = size; j < cards.length; j++){
+            dealtCards += cards[j] + "\n";
+        }
+
+        return "size = " + size + "\nUndealth cards: \n" + undealtCards + "\n" + "Dealth cards: \n" + dealtCards;
 
     }
+
+    public void shuffle(){
+        this.size = this.cards.length;
+        int k = size - 1;
+        int r = (int)(Math.random() * k) + 1; 
+        Card temp = cards[k];
+        cards[k] = cards[r];
+        cards[r] = temp;
+    }
+
 
 }
