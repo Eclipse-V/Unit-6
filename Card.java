@@ -1,3 +1,6 @@
+
+
+
 public class Card{
     private String rank;
     private String suit;
@@ -27,7 +30,10 @@ public class Card{
         if(this.rank.equals(c.rank) && this.suit.equals(c.suit) && this.pointValue == c.pointValue){
             return true;
         }
-        return false;
+        else{
+            return false;
+        }
+
     }
 
     public String toString(){

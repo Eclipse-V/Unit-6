@@ -1,3 +1,5 @@
+
+
 class Deck{
     private Card[] cards;
     private int size;
@@ -24,7 +26,10 @@ class Deck{
         if (size == 0){
             return true;
         }
-        return false;
+        else{
+            return false;
+        }
+
     }
 
     public int size(){
@@ -36,7 +41,9 @@ class Deck{
             size--;
             return cards[size];
         }
-        return null;
+        else{
+            return null;
+        }
     }
 
     public String toString(){
