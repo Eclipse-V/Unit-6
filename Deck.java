@@ -1,5 +1,3 @@
-
-
 class Deck{
     //instance variables
     private Card[] cards;
