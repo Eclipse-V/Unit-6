@@ -37,11 +37,11 @@ class Deck{
     //checks to see if there are any cards left
     //if there are cards left, the deck is decreased by one and it returns the amount left
     public Card deal(){
-        if (cards.length > 0){
-            size--;
-            return cards[size];
+        if (cards.length == 0){
+            return null;
         }
-        return null;
+        size--;
+        return cards[size];
     }
 
     //toString method to format the remaining deck of cards
